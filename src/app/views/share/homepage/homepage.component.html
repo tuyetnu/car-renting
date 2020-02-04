@@ -1,0 +1,94 @@
+<app-header></app-header>
+<div class="mioto-layout">
+    <section class="body">
+        <div class="banner-home__sect wd__sect landing-page"
+            style="background-image: url(&quot;/assets/images/bg-try4.jpg&quot;);">
+            <div class="container" id="home-box">
+                <h1 class="slogan">MIOTO - CÙNG BẠN TRÊN MỌI HÀNH TRÌNH</h1>
+                <div class="search-by-service__container">
+                    <div class="search-by-service__wrapper">
+                        <div class="tabs-left"><a class="active">
+                                <div class="service-box"><i class="ict ict-selfdrive"></i>
+                                    <p>Xe tự lái</p>
+                                </div>
+                            </a><a class="">
+                                <div class="service-box"><i class="ict ict-withdriver"></i>
+                                    <p>Xe có tài xế</p>
+                                </div>
+                            </a></div>
+                        <div class="search-by-service__box">
+                            <div class="wd-search">
+                                <div class="wd-search__wrapper">
+                                    <div class="form-search location has-placeholder "><label class="home-label">Địa
+                                            điểm</label>
+                                        <div class="wrap-input"><i class="ic ic-location-f"></i>
+                                            <div id="PlacesAutocomplete__root" class=""
+                                                style="position: relative; padding-bottom: 0px;"><input type="text"
+                                                    autocomplete="off" placeholder="Nhập thành phố, quận, địa chỉ..."
+                                                    class="" value=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-search has-timer"><label class="home-label">Bắt đầu</label>
+                                        <div class="d-flex">
+                                            <div class="wrap-input home-datetimerange">
+                                                <div class="react-bootstrap-daterangepicker-container"
+                                                    style="display: inline-block;"><span class="value">03/02/2020 <i
+                                                            class="i-chevron-down"></i></span></div>
+                                            </div>
+                                            <div class="wrap-select home-select">
+                                                <select>
+                                                    <option *ngFor="let item of time">{{item}}</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-search has-timer"><label class="home-label">Kết thúc</label>
+                                        <div class="d-flex">
+                                            <div class="wrap-input home-datetimerange">
+                                                <div class="react-bootstrap-daterangepicker-container"
+                                                    style="display: inline-block;"><span class="value">04/02/2020 <i
+                                                            class="i-chevron-down"></i></span></div>
+                                            </div>
+                                            <div class="wrap-select home-select">
+                                                <select>
+                                                    <option *ngFor="let item of time">{{item}}</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fn-search"><a class="btn btn--m btn-search-car"
+                                            href="/find/filter?startDate=1580738400000&amp;endDate=1580821200000&amp;address="><i
+                                                class="ic ic-search"></i> <span>TÌM XE NGAY</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="daterangepicker dropdown-menu ltr single openscenter">
+                    <div class="calendar left single" style="display: block;">
+                        <div class="daterangepicker_input hidden"><input class="input-mini form-control" type="text"
+                                name="daterangepicker_start" value="" style="display: none;"><i
+                                class="fa fa-calendar glyphicon glyphicon-calendar" style="display: none;"></i>
+                            <div class="calendar-time" style="display: none;">
+                                <div></div><i class="fa fa-clock-o glyphicon glyphicon-time"></i>
+                            </div>
+                        </div>
+                        <div class="calendar-table"></div>
+                    </div>
+                </div>
+                <div class="daterangepicker dropdown-menu ltr show-calendar openscenter">
+                    <div class="calendar left">
+                        <div class="daterangepicker_input hidden"><input class="input-mini form-control" type="text"
+                                name="daterangepicker_start" value=""><i
+                                class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+                            <div class="calendar-time" style="display: none;">
+                                <div></div><i class="fa fa-clock-o glyphicon glyphicon-time"></i>
+                            </div>
+                        </div>
+                        <div class="calendar-table"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
