@@ -18168,7 +18168,7 @@ h3.n-title:hover, h3.n-title:focus {
 }
 
 .banner-home__sect {
-  height: calc(100vh - 60px);
+  height: calc(60vh - 60px);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -18478,9 +18478,8 @@ label.home-label {
 }
 
 .wd__sect.banner-home__sect {
-  height: auto;
   padding: 6rem 0 8rem;
-  min-height: 600px;
+  min-height: 200px;
 }
 
 .wd__sect.banner-home__sect .form-search:after {
@@ -18612,20 +18611,21 @@ label.home-label {
   width: 100%;
   padding: 25px;
   background: rgba(0, 0, 0, 0.35);
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
   border-radius: 3px;
+  margin-top: 2rem;
 }
 
 .search-by-service__wrapper {
   width: 100%;
 }
 
-.search-by-service__wrapper .tabs-left {
+/* .search-by-service__wrapper .tabs-left {
   width: 30%;
-}
+} */
 
 .search-by-service__box {
-  width: 70%;
+  width: 100%;
 }
 
 .search-by-service__box .wd-search {
@@ -18654,7 +18654,7 @@ label.home-label {
 
 .car-area__sect {
   position: relative;
-  padding: 45px 0;
+  padding: 20px 0;
 }
 
 .car-area__sect.no-pd-bottom {
