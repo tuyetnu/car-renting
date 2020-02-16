@@ -7,16 +7,24 @@ import { HomepageComponent } from './views/share/homepage/homepage.component';
 import { HeaderComponent } from './views/share/header/header.component';
 import { MapComponent } from './views/map/map.component';
 
+import { AgmCoreModule } from '@agm/core';
+import { GmapComponent } from './views/gmap/gmap.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     HeaderComponent,
-    MapComponent
+    MapComponent,
+    GmapComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyB9WtDhFH-LQCamapShPpZTXG9ZGCngxrc',
+      libraries: ['places']
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
