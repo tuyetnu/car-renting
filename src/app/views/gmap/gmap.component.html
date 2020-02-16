@@ -1,8 +1,17 @@
-<agm-map 
-[latitude]="latitude" 
-[longitude]="longitude" 
-[zoom]="zoom" >
-  <agm-marker 
-  [latitude]="latitude" 
-  [longitude]="longitude"></agm-marker>
-</agm-map>
+<div class="container">
+
+    <h1>Angular Google Maps with Places Search Example</h1>
+
+    <div class="form-group">
+        <label>Enter address</label>
+        <input #search autocorrect="off" autocapitalize="off" spellcheck="off" type="text" class="form-control">
+    </div>
+
+    <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
+        <agm-marker [latitude]="latitude" [longitude]="longitude" [markerDraggable]="true" (dragEnd)="markerDragEnd($event)"></agm-marker>
+    </agm-map>
+
+    <h5>Address: {{address}}</h5>
+    <div>Latitude: {{latitude}}</div>
+    <div>Longitude: {{longitude}}</div>
+</div>
